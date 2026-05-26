@@ -12,7 +12,9 @@ SOURCES += \
     csvparseexception.cpp \
     csvreader.cpp \
     csvwriter.cpp \
+    drawingwidget.cpp \
     human.cpp \
+    jsonfigurereader.cpp \
     jsonreader.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -21,17 +23,23 @@ SOURCES += \
 
 HEADERS += \
     ../../OneDrive/Рабочий стол/json.hpp \
-    ../../OneDrive/Рабочий стол/json.hpp \
+    ../../OneDrive/Рабочий стол/figures.json \
     AbstractReader.h \
+    Figure.h \
+    circlefigure.h \
     csvparseexception.h \
     csvreader.h \
     csvwriter.h \
+    drawingwidget.h \
     human.h \
     json.hpp \
+    jsonfigurereader.h \
     jsonreader.h \
     mainwindow.h \
     mytextbrowser.h \
-    student.h
+    rectanglefigure.h \
+    student.h \
+    trianglefigure.h
 
 FORMS += \
     mainwindow.ui
@@ -40,3 +48,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    ../../../OneDrive/Рабочий стол/figures.json
